@@ -1,4 +1,4 @@
-![Image header](resources/img/readme-header-image.png)
+![Image header](readme-resources/img/readme-header-image.png)
 
 # Acerca de este repositorio
 
