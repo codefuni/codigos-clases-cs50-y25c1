@@ -6,9 +6,9 @@
 int main()
 {
     string s1 = "hola mundo";
-    string s2 = "HOLA MUNDO";
+    string s2 = "Hola mundo";
 
-    if (strcasecmp(s1, s2) == 0)
+    if (strcmp(s1, s2) == 0)
     {
         printf("Los valores son iguales\n");
     }

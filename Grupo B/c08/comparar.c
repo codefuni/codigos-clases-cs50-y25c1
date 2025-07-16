@@ -1,40 +1,19 @@
-#include <cs50.h>
-#include <stdio.h>
-#include <string.h>
-
-// Prototipo
-void comparar(string s1, string s2);
+# include <stdio.h>
+# include <cs50.h>
 
 int main()
 {
-    // Pedir al usuario los valores
-    string texto1 = get_string("Texto1: ");
-    string texto2 = get_string("Texto2: ");
-<
-    // Comparar los valores
-    // (Forma incorrecta: compara las direcciones de memoria)
-    if (texto1 == texto2)
-    {
-        printf("Son iguales\n");
-    }
-    else
-    {
-        printf("Son diferentes\n");
-    }
+    string pal1 = "hKla";
+    string pal2 = "hola";
 
-    // Comparar (correctamente)
-    comparar(texto1, texto2);
-}
-
-// Forma correcta
-void comparar(string s1, string s2)
-{
-    if (strcmp(s1, s2) == 0)
+    for (int i = 0; i < 4; i++)
     {
-        printf("Son iguales\n");
+        if (!(pal1[i] == pal2[i]))
+        {
+            printf("No son iguales\n");
+            return 1;
+        }
     }
-    else
-    {
-        printf("Son diferentes\n");
-    }
+    printf("Son iguales\n");
+    return 0;
 }
